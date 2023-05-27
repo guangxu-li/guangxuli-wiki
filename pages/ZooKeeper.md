@@ -1,0 +1,80 @@
+- Use Case
+    - Distributed Configuration Management
+    - Naming and Discovery
+    - Leader Election
+    - Group Membership
+    - Distributed Lock and Synchronization
+    - Metadata Storage
+    - Distributed System Coordination
+- Design Goals
+    - **Simple**
+        - [[ZooKeeper/Data Model]]
+            - High throughput and low latency numbers
+    - **Replicated**
+        - ![zookeeper-replication-structure.png](../assets/zookeeper-replication-structure_1683375834880_0.png){:height 191, :width 593}
+        - High available
+            - As long as a [quorum]([[ZooKeeper/Quorum]]) of the servers are available, the ZooKeeper service will be available.
+            - Reliability test:
+              collapsed:: true
+                - Environment:
+                    - Server: 7 machines
+                    - Clients: 910 clients
+                - Result:
+                    - ![zookeeper-high-available.png](../assets/zookeeper-high-available_1683376102712_0.png){:height 349, :width 500}
+                    - Followers fail and recover quickly
+                    - [Leader activation]([[ZooKeeper/ZAB Protocol/Leader Activation]]) is fast to allow system recover fast enough to prevent throughput from dropping substantially.
+                        - It takes less than 200ms to elect a new leader
+                    - As followers recover, ZooKeeper raise throughput again.
+        - Info maintained:
+            - In memory: image of state
+            - Persistent store: transaction logs and snapshots
+    - **Fast**
+        - Especially fast in "read-dominant" workloads, at the ratios of around 10:1
+        - Performance test:
+          collapsed:: true
+            - Environment:
+                - ZooKeeper release 3.2
+                    - v3.2 performance is improved by ~2x compared to the v3.1
+                - dual 2Ghz Xeon
+                - two SATA 15K RPM drives.
+                    - One drive was used as a dedicated ZooKeeper log device.
+                    - The snapshots were written to the OS drive.
+                - Approximately 30 other servers were used to simulate the clients.
+                - Leader is not allow to connect to clients.
+            - Result:
+                - ![zookeeper-performance-test.png](../assets/zookeeper-performance-test_1683375853479_0.png)
+    - **Ordered**
+        - [[ZooKeeper/Consistency]]
+        - ZooKeeper stamps each update with a number that reflects the order of all ZooKeeper transactions.
+- Guarantees
+    - [[Sequential Consistency]]
+        - [[ZooKeeper/Consistency]]
+    - Atomicity
+        - Updates either succeed or fail. No partial results.
+    - Single System Image
+        - A client will see the same view of the service regardless of the server that it connects to.
+    - Reliability
+        - Once an update has been applied, it will persist from that time forward until a client overwrites the update.
+    - Timeliness
+        - The clients view of the system is guaranteed to be update-to-date within a certain time bound.
+- Simple API
+    - **create**: creates a node at a location in the tree
+    - **delete**: deletes a node
+    - **exists**: tests if a node exists at a location
+    - **get data**: reads the data from a node
+    - **set data**: writes data to a node
+    - **get children**: retrieves a list of children of a node
+    - **sync**:
+      id:: c4be6220-1321-4a46-9267-510ba19177de
+        - waits for data to be propagated
+        - **not strictly** guarantee up-to-date data because it's **not** currently a quorum operation.
+- [[ZooKeeper/Watch]]
+- Implementation
+    - [[ZooKeeper/Session]]
+    - [[ZooKeeper/Characters]]
+    - ![zookeeper-implementation.png](../assets/zookeeper-implementation_1683376043364_0.png)
+        - The replicated database is an <mark style="background: #CACFD9A6;">in-memory</mark> database containing the entire data tree.
+        - Read requests are serviced from the local replica of each server database.
+        - Write requests are processed by [[ZAB Protocol]].
+            - All write requests are forwarded to a single server, which is called [leader](((44ca4faa-908f-4358-9a19-7d8b098544b1))).
+              id:: 02a8356e-449e-4432-8e4d-162808fe40c4

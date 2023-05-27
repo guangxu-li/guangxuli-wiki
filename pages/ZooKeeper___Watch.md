@@ -1,0 +1,30 @@
+- All read operations have the option of setting a watch as a side effect.
+    - `getData()`, `getChildren()`, `exists()`
+- One-time trigger: a watch is only triggered once
+- Sent to the client.
+    - Asynchronously.
+    - Ordering guarantee: a client will never see a change for which it has set a watch until it first sees the watch even.
+- The data for which the watch was set
+    - Data watches
+        - `getData()`, `exists()`
+        - Return info about the data of the node
+    - Child watches
+        - `getChildren()`
+        - Return a list of children
+- Maintained locally at the ZooKeeper server.
+    - When a client connects to a new server, the watch will be triggered for any session events.
+    - Watches will not be received while disconnected from a server.
+    - When a client reconnects, any previously registered watches will be reregistered and triggered if needed.
+- Semantics of Watches
+    - Created event: Enabled with a call to `exists`
+    - Deleted event: Enabled with a call to `exists`, `getData`, and `getChildren`
+    - Changed event: Enabled with a call to `exists` and `getData`
+    - Child event: Enabled with a call to `getChildren`
+- Persistent, Recursive Watches
+    - *Added in v3.6.0*
+    - **Not** One-time trigger, optionally, recursively watch all [[znodes]] starting at the znode that the watch is registered for.
+    - Set by `addWatch()`
+    - Remove by `removeWatches` with watcher type `WatcherType.Any`
+- Guarantees
+    - Watches are ordered.
+    - Client will see the watch event before seeing the new data.

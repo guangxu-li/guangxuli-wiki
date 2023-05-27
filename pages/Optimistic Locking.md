@@ -1,0 +1,8 @@
+- Optimistic concurrency control transactions involve these phases, and they need to be done in one atomic transaction:
+	- **Begin**: Record a timestamp marking the transaction's beginning.
+	- **Modify**: Read database values, and tentatively write changes.
+	- **Validate**:
+		- Check whether the data that this transaction has used (read or written) is changed by other transaction. This includes transactions that completed after this transaction's start time, and optionally, transactions that are still active at validation time.
+	- **Commit/Rollback**:
+		- If there is no conflict, make all changes take effect.
+		- If there is a conflict, resolve it, typically by aborting the transaction, although other resolution schemes are possible.

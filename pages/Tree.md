@@ -1,0 +1,5 @@
+- Special trees useful in practice:
+	- [[Trie]] is used for locating keys from within a set.
+	- Range querying and updating
+		- [[Binary Indexed Tree]]
+		- [[Segment Tree]]

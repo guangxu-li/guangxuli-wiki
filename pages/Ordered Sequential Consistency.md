@@ -1,0 +1,6 @@
+- Lies between sequential consistency and linearizability.
+    - Write ops: [[Linearizability]]
+    - Read  ops: [[Sequential Consistency]]
+    - Examples:
+        - [[ZooKeeper]]
+        -

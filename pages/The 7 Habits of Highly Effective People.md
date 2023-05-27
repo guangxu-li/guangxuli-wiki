@@ -1,0 +1,2 @@
+- References
+    - ![The 7 Habits of Highly Effective People - Stephen R Covey.pdf](../assets/The_7_Habits_of_Highly_Effective_People_-_Stephen_R_Covey_1684662090198_0.pdf)

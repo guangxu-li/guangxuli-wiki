@@ -1,0 +1,1 @@
+- ![adjacency-list.png](../assets/adjacency-list_1683376246173_0.png){:height 260, :width 655}

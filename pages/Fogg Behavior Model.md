@@ -1,0 +1,22 @@
+- ((646a3ce3-f048-44b3-ac76-0209aa1ef398))((6471ff57-c6ca-4870-a8ca-ab3bc8222f32))
+    - ((6471dddb-5d5e-4333-ade3-2e80da1c6661))
+        - ((6471f5b8-171c-484c-ae45-0568afa4361a))
+- A behavior happens when the three elements of MAP come together at the same moment
+    - [[Fogg Behavior Model/Motivation]]
+    - [[Fogg Behavior Model/Ability]]
+    - [[Fogg Behavior Model/Prompts]]
+- ---
+- ((6471f89c-309c-4db8-8d36-35e44a382981))
+    - ((6471f8f9-2283-456a-a58d-64974a3b68cd))
+- ((6471fa3f-27c9-46cd-bbb6-1ee201ca5e99))
+    - ((6471fa50-f888-4005-b845-9cb6f40e84f5))
+    - ((6471fa64-4def-451b-a8b7-15faea3adf7d))
+        - ((6471fab4-9f76-4ef8-9fec-1112b3608865))
+    - ((6471fa70-7930-419b-812c-719fa3205d28))
+        - ((6471fda1-f76b-475c-a439-d94e16447b7c))
+    - ((6471fdac-1166-49a9-a5d5-873b7ca1690f))
+- ((64720dde-a00e-4e40-a001-8a0fc0110673))
+  ((64720fd6-4592-4983-8e72-cf191dd74e63))
+    - ((64720df9-8a07-49a1-a6dd-6f99dc1de441))
+    - ((64720dfc-4e87-4029-833e-a2158e9e6fbc))
+    - ((64720dff-2bd2-4e42-8989-7e4b1f8808bb))

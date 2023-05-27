@@ -1,0 +1,23 @@
+- **Leader**
+  id:: 44ca4faa-908f-4358-9a19-7d8b098544b1
+    - Reveal write and read ops.
+    - There's only one leader at any time.
+        - Guaranteed by [leader activation]([[ZooKeeper/ZAB Protocol/Leader Activation]])
+    - Sync the write ops to followers.
+- **Follower**
+    - Handle read requests.
+    - Forward write ops to the leader.
+    - Possible to join the leader election if the current leader is down.
+- **Observer**
+    - Handle read requests
+    - Forward write ops to the leader
+    - Non-voting members
+        - Don't vote, but only accept the vote result.
+        - Benefits
+            - Why not follower?
+                - To increase the whole system's read  performance by scaling out the followers, the write performance drops.
+                - Due to the fact that a write operation requires the agreement of a [quorum]([[ZooKeeper/Quorum]]) of nodes.
+                - The more followers, the more cost of voting is needed.
+                - The observer is designed specifically for this problem.
+            - Easy to scale without sacrificing the write and vote performance
+            - Observers are okay to fail since they are non-voting members.

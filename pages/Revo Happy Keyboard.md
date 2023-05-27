@@ -1,0 +1,1 @@
+- [Revo Happy Keyboard Manual](https://github.com/guangxu-li/the-sky-below/raw/main/assets/revo-happy-keyboard-instruction.pdf)

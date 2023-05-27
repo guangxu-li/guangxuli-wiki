@@ -1,0 +1,9 @@
+- ((64562cfa-8fd5-4891-a5a6-0b832516ffb2))
+    - Model
+        - application data and business logic
+    - View
+        - responsible for rendering the UI  and displaying the data from the model
+        - pass the user input to controller
+    - Controller
+        - intermediary between the model and the view
+        - define how UI reacts to user input

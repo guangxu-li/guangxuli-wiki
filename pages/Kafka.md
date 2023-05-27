@@ -1,0 +1,13 @@
+- Use Cases
+    - Messaging
+        - In this domain Kafka is comparable to traditional messaging systems such as [[ActiveMQ]] or [[RabbitMQ]].
+    - Website Activity Tracking
+    - Metrics
+        - Aggregate statistics from distributed applications to produce centralized feeds of operational data.
+    - Log Aggregation
+    - Stream Processing
+    - [[Event Sourcing]]
+    - Commit Log
+        - Serve as external commit-log for a [[Distributed Systems]].
+        - The log helps replicate data between nodes and acts as a re-syncing mechanism for failed node to restore their data.
+- [[Kafka Concepts]]

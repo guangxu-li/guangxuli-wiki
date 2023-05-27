@@ -1,0 +1,1 @@
+- A directed graph (or digraph) is a set of vertices and a collection of directed edges that each connects an ordered pair of vertices.
