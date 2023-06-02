@@ -1,0 +1,37 @@
+- Principles
+    - Programming to an **Interface**, not an **Implementation**.[1]([[647a0086-aaf0-4b08-ab57-e95385dd6082]])
+        - Don't declare variables to be instances of particular concrete classes. Instead, commit only to an interface defined by an abstract class.[2]([[647a00b6-9fbb-4c71-a5a0-d8a2e6e5647d]])
+    - Favor object composition over class inheritance.[3]([[647a03fd-de03-4283-bd75-a163fa5b5e9d]])
+        - Inheritance
+            - **white-box reuse:**
+                - internals of parent classes are often visible to subclasses.[4]([[647a0290-4c9f-4ced-a31a-bc0fedf10b17]])
+            - Pros:
+                - defined statically at compile-time and easy to use
+                - easy to modify the implementation being reused
+            - Cons:
+                - can't change the implementation inherited from parent classes at run-time
+                - inheritance breaks encapsulation
+                    - because inheritance exposes a subclass to details of its parent's implementation
+        - Composition
+            - **black-box reuse:**[5]([[647a029c-9571-4ee0-bab7-96f448d5d0c3]])
+                - Object composition requires that the objects being composed have well-defined interfaces.
+                - No internal details of objects are visible.
+                - Objects appear only as "black boxes".
+            - Pros:
+                - composition don't break encapsulation
+                    - because objects are accessed solely through their interfaces
+                - any object can be replaced at runtime by another as long as it has the same type
+                - helps to keep each class encapsulated and focused on one task
+            - Cons:
+                - Dynamic, highly parameterized software is harder to understand than more static software.
+                  id:: 647a0b2a-bb4d-42f5-b360-0c1ab2ce15dd
+        - Delegation is way of making composition as powerful for reuse as inheritance.[6]([[647a04cf-824b-4ada-a289-8f1a6fef7f11]])
+            - ((647a0af0-f552-4651-b6dc-b274ec3a9525))
+            - Pros:
+                - easy to compose behaviors at runtime
+            - Cons:
+                - ((647a0b2a-bb4d-42f5-b360-0c1ab2ce15dd))
+- ---
+- References
+  collapsed:: true
+    - ![Design Patterns_ Elements of Reusable Obje - Erich Gamma.pdf](../assets/Design_Patterns_Elements_of_Reusable_Obje_-_Erich_Gamma_1683366634658_0.pdf)

@@ -24,6 +24,7 @@ description::  This page holds all ideas/projects that I'm planning to work on.
           :LOGBOOK:
           CLOCK: [2023-04-27 Thu 23:31:11]
           :END:
+        - TODO [[Object-oriented Programming]]
     - Tech Stack
         - [[Go]]
         - [[Protobuf]]

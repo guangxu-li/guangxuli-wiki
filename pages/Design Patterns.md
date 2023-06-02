@@ -1,5 +1,5 @@
-- ((64562a78-d32d-46cd-8c87-0353ddf6ff90))
-- ((645628fa-f245-4e99-a0dd-36de6dd501d6))
+- Design patterns are descriptions of communicating <mark style='background-color:#bbfabb'>objects and classes</mark> that are customized to <mark style='background-color:#bbfabb'>solve a general design problem</mark> in a particular context.[1]([[64562a78-d32d-46cd-8c87-0353ddf6ff90]])
+- In general, a pattern has four essential elements:[2]([[645628fa-f245-4e99-a0dd-36de6dd501d6]])
     - Pattern name
     - Problem
       collapsed:: true
@@ -17,12 +17,27 @@
         - [[Design Patterns/Creational]]
         - [[Design Patterns/Structural]]
         - [[Design Patterns/Behavioral]]
-    - Scope
+    - Scope[3]([[6479c53b-8334-438c-ba3c-b7f3b46c40c2]])
         - Class
-            - ((645735cd-3380-4e0c-aadf-7e06c42ff52d))
+            - Class patterns deal with relationships between classes and thei subclasses.
+            - These relationships are established through inheritance, so they are **static**— fixed at compile-time.
         - Object
-            - ((645735e3-a447-41df-a59a-144eef43d7e4))
+            - Object patterns deal with object relationships, which can be changed at run-time and are more **dynamic**.
+    - ((6479ec7c-14c0-4d13-8fab-096c812c128f))
+- Design patterns solve the following design problems
+    - Finding appropriate objects[4]([[6479ebf6-c88e-4385-b1b8-8651b3ecbd66]])
+        - The hard part about object-oriented design is decomposing a system into objects[5]([[6479ebe3-b87b-41ed-a1a9-8bda0f052e20]])
+        - Design patterns help to identify less-obvious abstractions and the objects that can capture them.[6]([[6479edc2-29d0-429d-b169-f04ffe6f2cfe]])
+            - e.g. Objects that represent a process or algorithm don't occur in nature, yet they're crucial part of flexible designs.
+    - Determining Object Granularity[7]([[6479edfb-19dd-4dd3-93a5-e95711fa44c1]])
+    - Specifying Object Interfaces[8]([[6479f365-87c4-4b7e-be9c-11be20f44b06]])
+        - Design patterns help to define interface by identifying key elements and kinds of data that get sent across an interface.[9]([[6479fa14-8332-4b87-8fe7-30c02d837dc1]])
+        - Design patterns also specify relationships between interfaces.[10]([[6479fb5e-ed18-42aa-8f0c-b190f72b6c2a]])
+    - Specifying Object Implementations[11]([[6479fb9f-2c07-499d-a59a-b51c316a00cc]])
+    - Putting Reuse Mechanisms to Work[12]([[647a0265-55e2-4054-abf4-074aa55e3477]])
+    - Relating Run-Time and Compile-Time Structures[13]([[647a0bd2-ac9a-43a1-b3f5-26170e1e177b]])
 - References
+  collapsed:: true
     - [Example Code](https://github.com/guangxu-li/Go-Design-Patterns)
     - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns)
     - [Head First Design Patterns](https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns)
