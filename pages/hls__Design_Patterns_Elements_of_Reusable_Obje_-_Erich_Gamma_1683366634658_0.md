@@ -23,13 +23,6 @@ file-path:: ../assets/Design_Patterns_Elements_of_Reusable_Obje_-_Erich_Gamma_16
   hl-page:: 24
   hl-color:: purple
   id:: 64562d0e-36b1-429c-a533-7570b7ef3c75
-- [:span]Design pattern space
-  hl-type:: area
-  hl-stamp:: 1683376634955
-  hl-page:: 30
-  ls-type:: annotation
-  id:: 64564a02-2d6d-4223-bab4-bc6fcb1ab7c6
-  hl-color:: blue
 - Class patterns deal with relationships between classes and thei subclasses. These relationships are established through inheritance, so they are static— fixed at compile-time. Object patterns deal with object relationships, which can be changed at run-time and are more dynamic.
   ls-type:: annotation
   hl-page:: 30
@@ -238,3 +231,231 @@ file-path:: ../assets/Design_Patterns_Elements_of_Reusable_Obje_-_Erich_Gamma_16
   hl-page:: 42
   hl-color:: red
   id:: 647a0bd2-ac9a-43a1-b3f5-26170e1e177b
+- Designing for Change
+  ls-type:: annotation
+  hl-page:: 43
+  hl-color:: yellow
+  id:: 647b5246-34f3-4c20-9c61-f9ca4648e400
+- A design that doesn't take change into account risks major redesign in the future. 
+  ls-type:: annotation
+  hl-page:: 43
+  hl-color:: yellow
+  id:: 647b5318-f8ed-457c-a849-4f45fbc280e5
+- Design patterns help you avoid this by ensuring that a system can change in specific ways. Each design pattern lets some aspect of system structure vary independently of other aspects, thereby making a system more robust to a particular kind of change. Here are some common causes of redesign along with the design pattern(s) that address them:
+  ls-type:: annotation
+  hl-page:: 44
+  hl-color:: yellow
+  id:: 647b5336-a0ef-42bc-bfc5-32818d209cb6
+- Toolkit design is arguably harder than application design, because toolkits have to work in many applications to be useful. Moreover, the toolkit writer isn't in a position to know what those applications will be or their special needs. That makes it all the more important to avoid assumptions and dependencies that can limit the toolkit's flexibility and consequently its applicability and effectiveness.
+  ls-type:: annotation
+  hl-page:: 46
+  hl-color:: yellow
+  id:: 647c209e-a1f0-4760-8649-4ec7f008075b
+  hl-stamp:: 1685856802549
+- Frameworks thus emphasize design reuse over code reuse, though a framework will usually include concrete subclasses you can put to work immediately.
+  ls-type:: annotation
+  hl-page:: 47
+  hl-color:: yellow
+  id:: 647c32df-e6b8-4504-9ff0-0a6e83559d61
+- When you use a toolkit (or a conventional subroutine library for that matter), you write the main body of the application and call the code you want to reuse.
+  ls-type:: annotation
+  hl-page:: 47
+  hl-color:: yellow
+  id:: 647c3322-17f2-4d5b-b37a-23ba57c0f15f
+- When you use a framework, you reuse the main body and write the code it calls.
+  ls-type:: annotation
+  hl-page:: 47
+  hl-color:: yellow
+  id:: 647c3327-d748-4900-809b-02e5e6a538c3
+- If applications are hard to design, and toolkits are harder, then frameworks are hardest of all.
+  ls-type:: annotation
+  hl-page:: 47
+  hl-color:: yellow
+  id:: 647c334b-26d7-4c13-9ec3-15a2325edb19
+- Therefore it's imperative to design the framework to be as flexible and extensible as possible.
+  ls-type:: annotation
+  hl-page:: 47
+  hl-color:: blue
+  id:: 647c3386-0dd5-4511-a27f-0231cd26799c
+- [:span]
+  ls-type:: annotation
+  hl-page:: 30
+  hl-color:: blue
+  id:: 64564a02-2d6d-4223-bab4-bc6fcb1ab7c6
+  hl-type:: area
+  hl-stamp:: 1683376634955
+- Here are several different approaches to finding the design pattern that's right for your problem:
+  ls-type:: annotation
+  hl-page:: 48
+  hl-color:: yellow
+  id:: 647c3779-4208-4ee2-81c8-2afb99273f95
+- Here's a step-by-step approach to applying a design pattern effectively:
+  ls-type:: annotation
+  hl-page:: 49
+  hl-color:: yellow
+  id:: 647c3c1a-57f0-439c-b606-fb46a73c0460
+- [:span]
+  ls-type:: annotation
+  hl-page:: 50
+  hl-color:: yellow
+  id:: 647c3c84-7201-415a-9183-328014b576b5
+  hl-type:: area
+  hl-stamp:: 1685863547813
+- A design pattern should only be applied when the flexibility it affords is actually needed. The Consequences sections are most helpful when evaluating a pattern's benefits and liabilities.
+  ls-type:: annotation
+  hl-page:: 51
+  hl-color:: red
+  id:: 647c3ced-a866-425d-a6a6-affc1db9efd4
+  hl-stamp:: 1685864333231
+- We will examine seven problems in Lexi's design:
+  ls-type:: annotation
+  hl-page:: 53
+  hl-color:: yellow
+  id:: 647c438d-79fb-42b5-85cf-30231cba5669
+- Document structure
+  ls-type:: annotation
+  hl-page:: 53
+  hl-color:: green
+  id:: 647c4398-114b-47a7-81d6-d47cd8e0773d
+- Formatting
+  ls-type:: annotation
+  hl-page:: 53
+  hl-color:: green
+  id:: 647c439a-bcd6-45c8-a1ac-b2cde1050e67
+- Embellishing the user interface.
+  ls-type:: annotation
+  hl-page:: 55
+  hl-color:: green
+  id:: 647c439f-c46b-4871-ab56-0026a52a1a48
+- Supporting multiple look-and-feel standards
+  ls-type:: annotation
+  hl-page:: 55
+  hl-color:: green
+  id:: 647c43a4-8061-4207-9f13-bedc8397c530
+- Supporting multiple window systems
+  ls-type:: annotation
+  hl-page:: 55
+  hl-color:: green
+  id:: 647c43a8-44c5-4a7a-9072-e0fb1fc00869
+- User operations
+  ls-type:: annotation
+  hl-page:: 55
+  hl-color:: green
+  id:: 647c43aa-a641-4555-a536-0d2c72c56c19
+- Spelling checking and hyphenation
+  ls-type:: annotation
+  hl-page:: 55
+  hl-color:: green
+  id:: 647c43af-f215-4249-80e6-b2f3c87d0f66
+- To give Lexi's implementation similar qualities, we'll choose an interna representation that matches the document's physical structure.
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: yellow
+  id:: 647c440e-695a-4944-9b4f-f9ac78edaca0
+- Maintaining the document's physical structure
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: green
+  id:: 647c4417-7ac5-44d6-bdee-29a2acbd21a2
+- Generating and presenting the document visually
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: green
+  id:: 647c441b-2a57-4c9a-81ef-123ce8cd5344
+- Mapping positions on the display to elements in the internal representation
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: green
+  id:: 647c4422-7ae6-47e4-b122-c4ff50f86c34
+- treat text and graphics uniformly
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: green
+  id:: 647c443e-9597-49f0-acb7-42c08e381a7c
+- implementation shouldn't have to distinguish between single elements and groups of elements in the internal representation
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: green
+  id:: 647c4474-ce74-4f48-9ca8-61f845b3628a
+- A common way to represent hierarchically structured information is through a technique called recursive composition,
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: blue
+  id:: 647c4756-3940-42cb-b129-b01388f528f2
+- Recursive composition gives us a way to compose a document out of simple graphical elements.
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: yellow
+  id:: 647c4768-7412-4607-b8e9-d1e8ac947faa
+- By using an object for each character and graphical element in the document, we promote flexibility at the finest levels of Lexi's design. We can treat text and graphics uniformly with respect to how they are drawn, formatted, and embedded within each other. 
+  ls-type:: annotation
+  hl-page:: 58
+  hl-color:: yellow
+  id:: 647c4786-067e-460a-a778-812e5c960216
+- This approach has two important implications. 
+  ls-type:: annotation
+  hl-page:: 58
+  hl-color:: yellow
+  id:: 647c478d-5e23-4781-a66e-caffab09b707
+- The objects need corresponding classes. 
+  ls-type:: annotation
+  hl-page:: 58
+  hl-color:: green
+  id:: 647c4792-6395-4d72-87cb-33ad35de7d5c
+- these classes must have compatible interfaces, because we want to treat the objects uniformly
+  ls-type:: annotation
+  hl-page:: 58
+  hl-color:: green
+  id:: 647c479c-872e-4458-a653-9ec932be351c
+- Glyphs like Row that can have children should use Child internally instead of accessing the child data structure directly.
+  ls-type:: annotation
+  hl-page:: 60
+  hl-color:: yellow
+  id:: 647c4ce7-c9bf-407a-841a-6a7e22ebd852
+- That way you won't have to modify operations like Draw that iterate through the children when you change the data structure from, say, an array to a linked list.
+  ls-type:: annotation
+  hl-page:: 60
+  hl-color:: green
+  id:: 647c4d21-ed34-4b64-8240-642aed565da8
+- We consider two embellishments in Lexi's user interface. 
+  ls-type:: annotation
+  hl-page:: 63
+  hl-color:: yellow
+  id:: 647c5323-6a2a-4830-b2ff-fe7ddfdaf9b7
+- The first adds a border around the text editing area to demarcate the page of text.
+  ls-type:: annotation
+  hl-page:: 63
+  hl-color:: green
+  id:: 647c5327-3c96-4f07-b276-6570def26ae3
+- The second adds scroll bars that let the user view different parts of the page. 
+  ls-type:: annotation
+  hl-page:: 63
+  hl-color:: green
+  id:: 647c532b-870c-430c-b36e-d7307b1d0243
+- Transparent Enclosure
+  ls-type:: annotation
+  hl-page:: 63
+  hl-color:: blue
+  id:: 647c5376-93a4-4b49-a439-ab348fe4bee3
+- the concept of transparent enclosure
+  ls-type:: annotation
+  hl-page:: 64
+  hl-color:: blue
+  id:: 647c54c0-eaa6-47fa-88c1-7df3cafa0ff3
+- single-child (or single-component) composition
+  ls-type:: annotation
+  hl-page:: 64
+  hl-color:: yellow
+  id:: 647c54c9-a7ea-451f-926d-b3e98c4ea4a6
+  hl-stamp:: 1685869788480
+- compatible interfaces
+  ls-type:: annotation
+  hl-page:: 64
+  hl-color:: yellow
+  id:: 647c54cf-4c8c-405f-a4d4-5bcc00757547
+  hl-stamp:: 1685869789726
+- Clients generally can't tell whether they're dealing with the component or its enclosure(i.e., the child's parent), especially if the enclosure simply delegates all its operations to its component. But the enclosure can also augment the component's behavior by doing work of its own before and/or after delegating an operation. The enclosure can also effectively add state to the component. 
+  ls-type:: annotation
+  hl-page:: 64
+  hl-color:: green
+  id:: 647c54f4-b0bb-4f00-855b-e79ce94982f4

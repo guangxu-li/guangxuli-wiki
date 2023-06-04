@@ -1,30 +1,19 @@
-- Motivation is unreliable[^1], often fickle[^2] and complex[^3].
+- Motivation is unreliable, often fickle and complex.
     - competing motivations
     - conflicting motivations
     - motivation wave
       id:: 6474caa5-5812-49eb-83d5-65178bc7270e
-        - overestimated future motivation[^7]
-        - emotion first, rationality second[^8]
+        - overestimated future motivation
+        - emotion first, rationality second
     - motivation fluctuation
-        - willpower decreases from morning to evening[^9]
+        - willpower decreases from morning to evening
         - predictable ((6474caa5-5812-49eb-83d5-65178bc7270e))
             - Santa hat after the Christmas Day.
         - unpredictable ((6474caa5-5812-49eb-83d5-65178bc7270e))
     - enduring motivations
         - aspiration[^10]
 - Three sources of motivation:
-    - **P**erson[^4]
+    - **P**erson
     - **A**ction
         - Benefit or punishment associated with a behavior.[^5]
-    - **C**ontext[^6]
-- ---
-- [^1]: ((6474c1fe-d839-47d4-be95-4f263f9cbf7c))
-- [^2]: ((6474c204-14c7-491e-80d0-650a4ecfd16a))
-- [^3]: ((6474c9c4-3b4b-4ef1-be16-9166c08cf897))
-- [^4]: ((6474c3e5-ecb2-4ebd-bce7-b53ba78524e4))
-- [^5]: ((6474c3ef-ab33-4cda-8487-e0a71224c82d))
-- [^6]: ((6474c86a-2451-468a-ac82-f71df1940886))
-- [^7]: ((6474ccba-22c5-4ffc-9e45-8cbd566e4e88))
-- [^8]: ((6474cdec-caeb-4482-b4ba-d1d94d45d29e))
-- [^9]: ((6474ce83-7e3a-4d63-b740-8b5c86fe719e))
-- [^10]: ((6474cfdd-c450-4911-be11-6033c288adc6))
+    - **C**ontext

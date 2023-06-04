@@ -29,6 +29,8 @@
       id:: 644369d1-5a21-4cbd-a26a-1226869b78f8
     - [[ZooKeeper]]
 - [[Memo]]
+- Note Taking System
+    - [[Color-Coded Highlighting System]]
 - Photography
     - Gallery: [The Sky Below](https://guangxuli.com)
 - [[Projects]]

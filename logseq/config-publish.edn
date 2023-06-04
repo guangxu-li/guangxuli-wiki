@@ -90,7 +90,7 @@
  ;; :default-home {:page "Jun 3rd, 2021"}
  ;; 3. Setup page "home" as home page with multiple pages in sidebar
  ;; :default-home {:page "home" :sidebar ["page a" "page b"]}
- :default-home {:page "Contents"}
+ :default-home {:page "Contents" :sidebar ["Contents" "Color-Coded Highlighting System"]}
 
  ;; Tell logseq to use a specific folder in the repo as a default location for notes
  ;; if not specified, notes are stored in `pages` directory
@@ -125,7 +125,7 @@
  ;;  :editor/down            ["ctrl+j" "down"]
  ;;  :editor/left            ["ctrl+h" "left"]
  ;;  :editor/right           ["ctrl+l" "right"]}
- :shortcuts {:command-palette/toggle "ctrl+space"}
+ :shortcuts {:command-palette/toggle "ctrl+p", :editor/up "up", :editor/down "down"}
 
  ;; By default, pressing `Enter` in the document mode will create a new line.
  ;; Set this to `true` so that it's the same behaviour as the usual outliner mode.
@@ -198,14 +198,14 @@
  ;; ]
  :commands[
   ;; highlighter
-  ["yellow" [[:editor/input "<mark style='background-color:#fff3a3'></mark>" {:backward-pos 7}]]]
-  ["pink" [[:editor/input "<mark style='background-color:#f2b3cf'></mark>" {:backward-pos 7}]]]
-  ["blue" [[:editor/input "<mark style='background-color:#b5d3ff'></mark>" {:backward-pos 7}]]]
-  ["green" [[:editor/input "<mark style='background-color:#bbfabb'></mark>" {:backward-pos 7}]]]
-  ["red" [[:editor/input "<mark style='background-color:#fc4e4e'></mark>" {:backward-pos 7}]]]
-  ["grey" [[:editor/input "<mark style='background-color:#cacfd9'></mark>" {:backward-pos 7}]]]
-  ["orange" [[:editor/input "<mark style='background-color:#ffb86c'></mark>" {:backward-pos 7}]]]
-  ["purple" [[:editor/input "<mark style='background-color:#d2b3ff'></mark>" {:backward-pos 7}]]]
+  ; ["yellow" [[:editor/input "<mark style='background-color:#fff3a3'></mark>" {:backward-pos 7}]]]
+  ; ["pink" [[:editor/input "<mark style='background-color:#f2b3cf'></mark>" {:backward-pos 7}]]]
+  ; ["blue" [[:editor/input "<mark style='background-color:#b5d3ff'></mark>" {:backward-pos 7}]]]
+  ; ["green" [[:editor/input "<mark style='background-color:#bbfabb'></mark>" {:backward-pos 7}]]]
+  ; ["red" [[:editor/input "<mark style='background-color:#fc4e4e'></mark>" {:backward-pos 7}]]]
+  ; ["grey" [[:editor/input "<mark style='background-color:#cacfd9'></mark>" {:backward-pos 7}]]]
+  ; ["orange" [[:editor/input "<mark style='background-color:#ffb86c'></mark>" {:backward-pos 7}]]]
+  ; ["purple" [[:editor/input "<mark style='background-color:#d2b3ff'></mark>" {:backward-pos 7}]]]
  ]
 
  ;; By default, a block can only be collapsed if it has some children.

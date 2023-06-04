@@ -1,5 +1,5 @@
-@import url('https://use.typekit.net/pts7gtm.css');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://use.typekit.net/pts7gtm.css");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 :root {
   --ls-font-family: Futura PT, sans-serif;
@@ -7,9 +7,68 @@
 }
 
 #main-content-container {
-    font-size: var(--ls-page-text-size);
+  font-size: var(--ls-page-text-size);
 }
 
 .CodeMirror {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
+}
+/*         ┌──────────────────────────────────────────────────────────┐
+           │                plugin logseq-plugin-wrap                 │
+           └──────────────────────────────────────────────────────────┘
+*/
+
+mark {
+  background: #fef3ac !important;
+  color: #262626 !important;
+}
+span[data-ref="#red"],
+span[data-ref="#green"],
+span[data-ref="#blue"],
+span[data-ref="#purple"],
+span[data-ref="$red"],
+span[data-ref="$green"],
+span[data-ref="$blue"],
+span[data-ref="$purple"] {
+  display: none;
+}
+span[data-ref="#red"] + mark {
+  background: #ffc7c7 !important;
+  color: #262626 !important;
+}
+span[data-ref="#green"] + mark {
+  background: #ccffc1 !important;
+  color: #262626 !important;
+}
+span[data-ref="#blue"] + mark {
+  background: #abdfff !important;
+  color: #262626 !important;
+}
+span[data-ref="#purple"] + mark {
+  background: #9584ce !important;
+  color: #262626 !important;
+}
+span[data-ref="$red"] + mark {
+  color: #ffc7c7 !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
+}
+span[data-ref="$green"] + mark {
+  color: #ccffc1 !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
+}
+span[data-ref="$blue"] + mark {
+  color: #abdfff !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
+}
+span[data-ref="$purple"] + mark {
+  color: #9584ce !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
 }

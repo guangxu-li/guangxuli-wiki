@@ -1,4 +1,0 @@
-Public:: false
-
-- {{embed [[Inbox]]}}
-- [[]]

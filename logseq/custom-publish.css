@@ -18,13 +18,66 @@
   display: none !important;
 }
 
-.menu-links-wrapper > :nth-child(1),
-.menu-links-wrapper > :nth-child(2),
-.menu-links-wrapper > :nth-child(7),
-.menu-links-wrapper > :nth-child(8) {
-    display: none !important;
+.cp__right-sidebar-settings > .text-sm:nth-child(3) {
+  display: none !important;
 }
 
-.cp__right-sidebar-settings > .text-sm:nth-child(3) {
-    display: none !important;
+/*         ┌──────────────────────────────────────────────────────────┐
+           │                plugin logseq-plugin-wrap                 │
+           └──────────────────────────────────────────────────────────┘
+*/
+
+mark {
+  background: #fef3ac !important;
+  color: #262626 !important;
+}
+span[data-ref="#red"],
+span[data-ref="#green"],
+span[data-ref="#blue"],
+span[data-ref="#purple"],
+span[data-ref="$red"],
+span[data-ref="$green"],
+span[data-ref="$blue"],
+span[data-ref="$purple"] {
+  display: none;
+}
+span[data-ref="#red"] + mark {
+  background: #ffc7c7 !important;
+  color: #262626 !important;
+}
+span[data-ref="#green"] + mark {
+  background: #ccffc1 !important;
+  color: #262626 !important;
+}
+span[data-ref="#blue"] + mark {
+  background: #abdfff !important;
+  color: #262626 !important;
+}
+span[data-ref="#purple"] + mark {
+  background: #826cb1 !important;
+  color: #262626 !important;
+}
+span[data-ref="$red"] + mark {
+  color: #ffc7c7 !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
+}
+span[data-ref="$green"] + mark {
+  color: #ccffc1 !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
+}
+span[data-ref="$blue"] + mark {
+  color: #abdfff !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
+}
+span[data-ref="$purple"] + mark {
+  color: #826cb1 !important;
+  background: unset !important;
+  padding: 0;
+  border-radius: 0;
 }

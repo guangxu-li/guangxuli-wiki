@@ -1,10 +1,11 @@
 - Principles
-    - Programming to an **Interface**, not an **Implementation**.[1]([[647a0086-aaf0-4b08-ab57-e95385dd6082]])
-        - Don't declare variables to be instances of particular concrete classes. Instead, commit only to an interface defined by an abstract class.[2]([[647a00b6-9fbb-4c71-a5a0-d8a2e6e5647d]])
-    - Favor object composition over class inheritance.[3]([[647a03fd-de03-4283-bd75-a163fa5b5e9d]])
+    - Programming to an **Interface**, not an **Implementation**.
+        - Don't declare variables to be instances of particular concrete classes. Instead, commit only to an interface defined by an abstract class.
+    - Favor object composition over class inheritance.
+      id:: 647a075a-09d2-4fb4-ac39-4780afb344bf
         - Inheritance
             - **white-box reuse:**
-                - internals of parent classes are often visible to subclasses.[4]([[647a0290-4c9f-4ced-a31a-bc0fedf10b17]])
+                - internals of parent classes are often visible to subclasses.
             - Pros:
                 - defined statically at compile-time and easy to use
                 - easy to modify the implementation being reused
@@ -13,7 +14,7 @@
                 - inheritance breaks encapsulation
                     - because inheritance exposes a subclass to details of its parent's implementation
         - Composition
-            - **black-box reuse:**[5]([[647a029c-9571-4ee0-bab7-96f448d5d0c3]])
+            - **black-box reuse:**
                 - Object composition requires that the objects being composed have well-defined interfaces.
                 - No internal details of objects are visible.
                 - Objects appear only as "black boxes".
@@ -25,7 +26,7 @@
             - Cons:
                 - Dynamic, highly parameterized software is harder to understand than more static software.
                   id:: 647a0b2a-bb4d-42f5-b360-0c1ab2ce15dd
-        - Delegation is way of making composition as powerful for reuse as inheritance.[6]([[647a04cf-824b-4ada-a289-8f1a6fef7f11]])
+        - Delegation is way of making composition as powerful for reuse as inheritance.
             - ((647a0af0-f552-4651-b6dc-b274ec3a9525))
             - Pros:
                 - easy to compose behaviors at runtime
@@ -33,5 +34,5 @@
                 - ((647a0b2a-bb4d-42f5-b360-0c1ab2ce15dd))
 - ---
 - References
-  collapsed:: true
-    - ![Design Patterns_ Elements of Reusable Obje - Erich Gamma.pdf](../assets/Design_Patterns_Elements_of_Reusable_Obje_-_Erich_Gamma_1683366634658_0.pdf)
+    - url:: [Tiny Habits](https://www.goodreads.com/book/show/43261127-tiny-habits)
+      book:: ![Design Patterns_ Elements of Reusable Obje - Erich Gamma.pdf](../assets/Design_Patterns_Elements_of_Reusable_Obje_-_Erich_Gamma_1683366634658_0.pdf)

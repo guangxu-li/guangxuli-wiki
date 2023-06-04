@@ -1,22 +1,18 @@
+url:: [Tiny Habits](https://www.goodreads.com/book/show/43261127-tiny-habits)
+book:: ![Tiny Habits_ The Small Changes That Change - Bj Fogg.pdf](../assets/Tiny_Habits_The_Small_Changes_That_Change_-_Bj_Fogg_1684663253979_0.pdf)
+
 - ((646a3ce3-f048-44b3-ac76-0209aa1ef398))((6471ff57-c6ca-4870-a8ca-ab3bc8222f32))
-    - The model applies to all human behavior[^1]
-        - Behaviors look different, but the core mechanisms are the same.[^2]
-    - The easier a behavior is to do, the more likely the behavior will become habit.[^5]
-    - Behaviors that ultimately become habits will reliably fall above the Action Line.[^3]
-    - No behavior happens without a prompt.[^4]
+    - The model applies to all human behavior
+        - Behaviors look different, but the core mechanisms are the same.
+    - The easier a behavior is to do, the more likely the behavior will become habit.
+    - Behaviors that ultimately become habits will reliably fall above the Action Line.
+    - No behavior happens without a prompt.
 - A behavior happens when the three elements of MAP come together at the same moment
     - [[Fogg Behavior Model/Motivation]]
     - [[Fogg Behavior Model/Ability]]
     - [[Fogg Behavior Model/Prompts]]
-- Three Steps for Troubleshooting a Behavior:[^6]
+- Three Steps for Troubleshooting a Behavior:
   Notice that fussing around with motivation is the last step in the troubleshooting order.
     - 1. Check to see if there’s a prompt to do the behavior.
     - 2. See if the person has the ability to do the behavior.
     - 3. See if the person is motivated to do the behavior.
-- ---
-- [^1]: ((6471dddb-5d5e-4333-ade3-2e80da1c6661))
-- [^2]: ((6471f5b8-171c-484c-ae45-0568afa4361a))
-- [^3]: ((6471f8f9-2283-456a-a58d-64974a3b68cd))
-- [^4]: ((6479a9bb-b19e-47df-b263-2d15a3758dc6))
-- [^5]: ((6479aa76-ed6c-4740-abc1-343fa7f5e6e1))\
-- [^6]: ((6479aae6-4b72-408e-aad1-8efedec2cc1e))

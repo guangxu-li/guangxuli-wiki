@@ -1,0 +1,15 @@
+- ((64564a02-2d6d-4223-bab4-bc6fcb1ab7c6))
+    - Purpose
+        - [[Design Patterns/Catalog/Creational]]
+        - [[Design Patterns/Catalog/Structural]]
+        - [[Design Patterns/Catalog/Behavioral]]
+    - Scope
+        - Class
+            - Class patterns deal with relationships between classes and thei subclasses.
+            - These relationships are established through inheritance, so they are **static**— fixed at compile-time.
+        - Object
+            - Object patterns deal with object relationships, which can be changed at run-time and are more **dynamic**.
+- ((6479ec7c-14c0-4d13-8fab-096c812c128f))
+- ((647c3c84-7201-415a-9183-328014b576b5))
+-
+-
