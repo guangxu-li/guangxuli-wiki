@@ -4,22 +4,35 @@ public:: false
 - **PRD/TRD**
 - **TD**
 - **Dev**
-    - SPSS All In One
-        - TODO Background Study
+- **Integration**
+    - [[Work/SPSS All In One]]
+        - DONE Background Study
+        - DONE Development
+        - DOING Unit tests and repo makefile + CICD + Scripts
+        - DONE Error code handling summary
+          DEADLINE: <2023-06-19 Mon 6:00>
+    - [[Work/PCP All In One]]
+        - DONE Background Study
+        - DONE Development
+        - TODO Unit tests and repo makefile + CICD + Scripts
+        - DONE Error code handling summary
+          DEADLINE: <2023-06-19 Mon 6:00>
 - **Test**
-    - FSV VLP Improvement
-        - DONE Technical Design
-        - DONE Refactoring codes related to shop and warehouse level masking to 3pl channel mapping
-        - DONE Add local cache and remote cache layer for the mapping
 - **UAT**
 - **Staging**
 - **Release**
+    - [[Work/FSV VLP Improvement]]
+        - DONE Technical Design
+        - DONE Refactoring codes related to shop and warehouse level masking to 3pl channel mapping
+        - DONE Add local cache and remote cache layer for the mapping
+        - DONE Release
+- **Done**
+  collapsed:: true
     - Coin Admin Kale Migration
         - DONE MR
-        - TODO Release
+        - DONE Release
           DEADLINE: <2023-05-31 Wed>
           SCHEDULED: <2023-05-29 Mon>
-- **Done**
     - Product Feeds on Coin Reward Page
         - DONE MTS gateway endpoints creation tickets in live
         - DONE MR + SPEX config

@@ -1,2 +1,17 @@
+- Creational design patterns abstract the instantiation process.
+    - **Class** creational patterns use **inheritance** to vary the class that's instantiated.
+    - **Object** creational patterns delegate instantiation to another object.
+- Two recurring themes in these patterns:
+    - They all encapsulate knowledge about which concrete classes the system uses.
+        - All the system at large knows about the objects is their interfaces as defined by abstract classes.
+    - They hide how instances of these classes are created and put together.
+- Catalog
+    - [[Design Patterns/Catalog/Creational/Abstract Factory]]
+    - [[Design Patterns/Catalog/Creational/Builder]]
+    - [[Design Patterns/Catalog/Creational/Factory Method]]
+    - [[Design Patterns/Catalog/Creational/Prototype]]
+    - [[Design Patterns/Catalog/Creational/Singleton]]
+-
+-
 -
 -

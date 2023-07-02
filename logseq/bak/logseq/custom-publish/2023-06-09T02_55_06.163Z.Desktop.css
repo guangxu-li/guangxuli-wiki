@@ -1,0 +1,30 @@
+@import url("https://use.typekit.net/pts7gtm.css");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --ls-font-family: Futura PT, sans-serif;
+  --ls-page-text-size: 16px;
+}
+
+#main-content-container {
+  font-size: var(--ls-page-text-size);
+}
+
+.CodeMirror {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.favorites {
+  display: none !important;
+}
+
+.menu-links-wrapper > :nth-child(1),
+.menu-links-wrapper > :nth-child(2),
+.menu-links-wrapper > :nth-child(7),
+.menu-links-wrapper > :nth-child(8) {
+    display: none !important;
+}
+
+.cp__right-sidebar-settings > .text-sm:nth-child(3) {
+    display: none !important;
+}

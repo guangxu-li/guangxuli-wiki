@@ -25,6 +25,7 @@ description::  This page holds all ideas/projects that I'm planning to work on.
           CLOCK: [2023-04-27 Thu 23:31:11]
           :END:
         - TODO [[Object-oriented Programming]]
+        - [[Unified Modeling Language]]
     - Tech Stack
         - [[Go]]
         - [[Protobuf]]

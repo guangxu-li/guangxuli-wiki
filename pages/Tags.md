@@ -1,1 +1,2 @@
-query-properties:: [:page]
+- [[book]]
+  query-properties:: [:page]

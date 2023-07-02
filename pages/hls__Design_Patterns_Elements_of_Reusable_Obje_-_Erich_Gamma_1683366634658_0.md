@@ -459,3 +459,172 @@ file-path:: ../assets/Design_Patterns_Elements_of_Reusable_Obje_-_Erich_Gamma_16
   hl-page:: 64
   hl-color:: green
   id:: 647c54f4-b0bb-4f00-855b-e79ce94982f4
+- The Abstract Factory pattern's emphasis on families of products distinguishes it from other creational patterns, which involve only one kind of product object.
+  ls-type:: annotation
+  hl-page:: 71
+  hl-color:: yellow
+  id:: 648416b1-606e-4ca7-ab7d-b88ffc220228
+- Let's consider two extreme philosophies
+  ls-type:: annotation
+  hl-page:: 73
+  hl-color:: yellow
+  id:: 64841ab7-3214-4989-b441-fbce00f8107a
+- Intersection of functionality.
+  ls-type:: annotation
+  hl-page:: 73
+  hl-color:: blue
+  id:: 64841abe-7936-4b40-ae3a-4bfa365b3243
+- Union of functionality.
+  ls-type:: annotation
+  hl-page:: 73
+  hl-color:: blue
+  id:: 64841ac1-4954-44bb-b3ec-00f9059d2ecf
+- Neither extreme is a viable solution, so our design will fall somewhere between the two.
+  ls-type:: annotation
+  hl-page:: 73
+  hl-color:: red
+  id:: 64841ad8-1688-4c5e-a0f0-d3cef873ace5
+- encapsulate the concept that varies
+  ls-type:: annotation
+  hl-page:: 74
+  hl-color:: blue
+  id:: 64841bd8-1e7a-4caf-b99e-40ef03a380a0
+- There are actually two pieces to this puzzle
+  ls-type:: annotation
+  hl-page:: 85
+  hl-color:: blue
+  id:: 64856f7e-fcdb-4694-955e-fd0b6b8f933a
+- accessing the information to be analyzed which we have scattered over the glyphs in the document structure,
+  ls-type:: annotation
+  hl-page:: 85
+  hl-color:: green
+  id:: 64856f82-5544-462f-96af-52c5be34cb5d
+- doing the analysis
+  ls-type:: annotation
+  hl-page:: 85
+  hl-color:: green
+  id:: 64856f91-81a0-4a56-8e56-68f96f11fad3
+- Once again, a better solution is to encapsulate the concept that varies, in this case th access and traversal mechanisms.
+  ls-type:: annotation
+  hl-page:: 86
+  hl-color:: red
+  id:: 64857128-c4ed-4553-b140-a601e675c56d
+- The Iterator pattern illustrates once more how encapsulating the concept that varies helps us gain flexibility and reusability. 
+  ls-type:: annotation
+  hl-page:: 90
+  hl-color:: green
+  id:: 6485734c-1404-4e8c-aebd-da3fd493fd48
+- The Visitor pattern captures the technique we've used to allow an open-ended number of analyses of glyph structures without having to change the glyph classes themselves.
+  ls-type:: annotation
+  hl-page:: 96
+  hl-color:: yellow
+  id:: 64858759-04d3-490f-8c4b-67ba703582a5
+  hl-stamp:: 1686472541491
+- The pattern is most suitable when you want to be able to do a variety of different things to objects that have a stable class structure.
+  ls-type:: annotation
+  hl-page:: 96
+  hl-color:: yellow
+  id:: 64858799-cbe6-4743-aba1-d9adc22bb3a8
+- Creational design patterns abstract the instantiation process.
+  ls-type:: annotation
+  hl-page:: 101
+  hl-color:: blue
+  id:: 64858f56-2b5b-40a6-8597-0abfc02d2e66
+- whereas an object creational pattern will delegate instantiation to another object
+  ls-type:: annotation
+  hl-page:: 101
+  hl-color:: green
+  id:: 64858fad-6d7d-44e4-9711-c793e6f1e144
+- A class creational pattern uses inheritance to vary the class that's instantiated,
+  ls-type:: annotation
+  hl-page:: 101
+  hl-color:: green
+  id:: 64858fb8-d547-4665-9fcd-7fcddfbdf013
+- Creational patterns become important as systems evolve to depend more on object composition than class inheritance.
+  ls-type:: annotation
+  hl-page:: 101
+  hl-color:: yellow
+  id:: 6485902d-a7a9-4d33-8832-792ab5166396
+- There are two recurring themes in these patterns.
+  ls-type:: annotation
+  hl-page:: 101
+  hl-color:: yellow
+  id:: 648590c5-9985-4ef6-9a07-70aa7c0f9c82
+- First, they all encapsulate knowledge about which concrete classes the system uses.
+  ls-type:: annotation
+  hl-page:: 101
+  hl-color:: green
+  id:: 648590c9-562b-416e-8ba7-7bde5126ab33
+- Second, they hide how instances of these classes are created and put together.
+  ls-type:: annotation
+  hl-page:: 101
+  hl-color:: green
+  id:: 648590da-ae0a-4352-9941-3d37bb89353f
+- Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+  ls-type:: annotation
+  hl-page:: 107
+  hl-color:: yellow
+  id:: 648595af-783b-4019-983c-9eb1b74e33fc
+- Consider a user interface toolkit that supports multiple look-and-feel standards such as Motif and Presentation Manager. Different look-and-feels define different appearances and behaviors for user interface "widgets" like scroll bars, windows and buttons.
+  ls-type:: annotation
+  hl-page:: 107
+  hl-color:: green
+  id:: 648597aa-34b2-442f-a54f-310ee6271d9b
+- To be portable across look-and-feel standards, an application should not hard-code its widgets for a particular look and feel.
+  ls-type:: annotation
+  hl-page:: 107
+  hl-color:: yellow
+  id:: 648597b7-ff01-44c5-a803-5a1cf1e7c643
+- Instantiating look-andf eel-specific classes of widgets throughout the application makes it hard to change the look and feel later.
+  ls-type:: annotation
+  hl-page:: 107
+  hl-color:: green
+  id:: 648597bb-f270-4cff-9f07-0a24e21fc698
+- Use the Abstract Factory pattern when
+  ls-type:: annotation
+  hl-page:: 108
+  hl-color:: yellow
+  id:: 64859883-1f07-45a1-bc03-57c8522fec97
+  hl-stamp:: 1686476938572
+- • a system should be independent of how its products are created, composed and represented.• a system should be configured with one of multiple families of products.• a family of related product objects is designed to be used together, and you need to enforce this constraint.• you want to provide a class library of products, and you want to reveal jus their interfaces, not their implementations.
+  ls-type:: annotation
+  hl-page:: 108
+  hl-color:: green
+  id:: 64859947-ca8b-4015-a841-2924eef1e00d
+- The Abstract Factory pattern has the following benefits and liabilities:
+  ls-type:: annotation
+  hl-page:: 109
+  hl-color:: yellow
+  id:: 64a180c8-3a0e-427e-afcd-46c160f4c402
+- It isolates concrete classes.
+  ls-type:: annotation
+  hl-page:: 109
+  hl-color:: yellow
+  id:: 64a180cc-d323-4d3e-94ce-cae04ade598b
+  hl-stamp:: 1688305923319
+- It makes exchanging product families easy.
+  ls-type:: annotation
+  hl-page:: 109
+  hl-color:: yellow
+  id:: 64a180cf-ffe6-4d2d-8372-0927ac68b6a5
+  hl-stamp:: 1688305925087
+- The class of a concrete factory appears only once in an application—that is, where it's instantiated. This makes i easy to change the concrete factory an application uses.
+  ls-type:: annotation
+  hl-page:: 109
+  hl-color:: green
+  id:: 64a1810c-5c95-4b3a-8599-20715414a538
+- Product class names are isolated in the implementation of the concrete factory; they do not appear in client code.
+  ls-type:: annotation
+  hl-page:: 109
+  hl-color:: green
+  id:: 64a1816e-5f16-4aa9-97c3-7b6e69a0bf36
+- It promotes consistency among products.
+  ls-type:: annotation
+  hl-page:: 110
+  hl-color:: yellow
+  id:: 64a181fb-f18a-4350-88a8-78c2fd2d4bd7
+- Supporting new kinds of products is difficult. 
+  ls-type:: annotation
+  hl-page:: 110
+  hl-color:: yellow
+  id:: 64a18260-845f-4f4f-a67f-6c12b424dec4

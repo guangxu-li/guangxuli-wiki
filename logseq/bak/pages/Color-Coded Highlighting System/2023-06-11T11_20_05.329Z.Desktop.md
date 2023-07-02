@@ -1,0 +1,13 @@
+- [[#blue]]==**Blue: Vocabulary, Key Concepts and Terms**==
+    - Use red for important concepts and terms that are central to understanding the subject matter.
+    - These could be definitions, theorems, laws, etc.
+- ==**Yellow: Main Ideas**==
+    - Highlight the primary arguments, conclusions, or insights in yellow.
+    - These are the core messages that the author wants you to understand.
+- [[#green]]==**Green: Examples, Supporting Details and Evidence**==
+    - Highlight examples, case studies, or any concrete instances that illustrate the concepts or main ideas in green.
+    - This could also include evidence that supports a theory or idea.
+- [[#red]]==**Red: Important Dates, Figures, Quotes, Citations, and Notes**==
+    - Use purple for specific data like historical dates, statistical data, important figures relevant to your study, and any direct quotes or citations that you might want to use in an essay or report.
+- [[#purple]]==**Purple: Questions, Answers and Areas of Confusion**==
+    - Use blue for any parts of the text that you don't understand or any questions you have that you want to look up later or ask your teacher/professor about.

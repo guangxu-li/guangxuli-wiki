@@ -1,0 +1,95 @@
+public:: false
+
+- Aggregate Function
+    - Fields calculated by aggregator
+      id:: 648295b9-01d6-42fd-aec5-cefb9512ebde
+      collapsed:: true
+        - checkout level
+            - warning_code
+            - result_code
+            - applicable
+            - deduct_fs_quota
+        - order level
+            - deduct_fsv_quota
+            - can_enjoy_shipping_discount
+    - Flows divided by checkout type
+      collapsed:: true
+        - Welcome package
+          id:: 648296f7-2600-4307-8d7c-f4a1d0aced4f
+            - checkout type is WP ==&&== WP Require FSV toggle **off**
+        - RP100
+          id:: 64829600-97f1-4350-9eb4-765bdf624480
+            - checkout type is RP100 ==&&== RP100 Require FSV toggle **off**
+        - Normal
+          id:: 64829603-54fe-4012-ad86-f3e2c34145ef
+          collapsed:: true
+            - checkout type is not WP or RP100 ==||== WP and RP100 Require FSV toggle **on**
+    - Fields calculation dependency
+        - <iframe src="https://link.excalidraw.com/readonly/dAXnqnJoCASjZOcfBBRw" width="100%" height="800" style="border: none;"></iframe>
+    - How to calculate the [fields](((648295b9-01d6-42fd-aec5-cefb9512ebde)))?
+      collapsed:: true
+        - ((648296f7-2600-4307-8d7c-f4a1d0aced4f))
+            - warning_code = `Constant_ERROR_WP_NO_NEED_FSV`
+            - result_code = 0
+                - applicable = true
+            - deduct_fs_quota = false
+              background-color:: yellow
+            - deduct_fsv_quota = false
+              background-color:: yellow
+            - can_enjoy_shipping_discount = false
+              background-color:: yellow
+        - ((64829600-97f1-4350-9eb4-765bdf624480))
+            - result_code
+                - **FSV selected:**
+                    - quota_error_code
+                    - [[#red]]==overwrite to Constant_ERROR_RP100_WITH_FSV==
+                - **FSV not selected:**
+                    - qutoa_error_code
+                    - [[#red]]==overwrite to no error==
+            - applicable = quota_error_code
+            - deduct_fs_quota = false
+              background-color:: yellow
+            - deduct_fsv_quota = false
+              background-color:: yellow
+            - can_enjoy_shipping_discount = false
+              background-color:: yellow
+        - ((64829603-54fe-4012-ad86-f3e2c34145ef))
+            - result_code
+                - **FSV selected:**
+                    - quota_error_code
+                    - voucher error code
+                    - channel error code
+                    - rule error code
+                - **FSV not selected:**
+                    - same as above
+                    - [[#red]]==but overwrite to zero==
+            - applicable
+                - **FSV selected:**
+                    - quota_error_code
+                    - voucher error code
+                    - channel error code
+                    - rule error code
+                - **FSV not selected:**
+                    - quota_error_code
+                    - **(always Error)** voucher error code
+                    - channel error code
+                    - rule error code
+            - deduct_fs_quota
+                - applicable
+                - checkout level has Shopee **type** rebate rule
+                - **(always True)** checkout type require FSV
+            - deduct_fsv_quota
+                - applicable
+                - order level has rebate rule
+                - **(always True)** checkout type require FSV
+            - can_enjoy_shipping_discount
+                - applicable
+                - order level has shopee **subtype** rebate rule
+                - **(always True)** checkout type require FSV
+    - Questions
+      collapsed:: true
+        - Result code is overwritten to 0 when FSV is not used, but applicable is always false in this case
+            - Result code vs applicable
+        - all rule ids in the aggregate input are not 0
+            - aggregated channel id?
+        - can enjoy shipping discount definition? Why special checkout type skip this

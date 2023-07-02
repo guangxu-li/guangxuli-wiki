@@ -1,0 +1,5 @@
+- References
+    - url:: [The Unified Modeling Language User Guide](https://www.goodreads.com/book/show/300666.The_Unified_Modeling_Language_User_Guide)
+      book:: ![The Unified Modeling Language User Guide - Grady Booch.pdf](../assets/The_Unified_Modeling_Language_User_Guide_-_Grady_Booch_1686481954358_0.pdf)
+    - url:: [The Unified Modeling Language Reference Manual](https://www.goodreads.com/book/show/1920174.The_Unified_Modeling_Language_Reference_Manual)
+      book:: ![The Unified Modeling Language Reference Ma - James Rumbaugh.pdf](../assets/The_Unified_Modeling_Language_Reference_Ma_-_James_Rumbaugh_1686493470890_0.pdf)
